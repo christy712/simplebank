@@ -14,6 +14,9 @@ migratedown:
 	/home/christy/go/bin/migrate -path db/migration -database "postgresql://root:1234@localhost:5432/simple_bank?sslmode=disable" -verbose down
 sqlc:
 	sqlc generate
+test:
+	go test -v -cover ./...
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc
+
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test
  
