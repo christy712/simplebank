@@ -9,16 +9,15 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
-   services:
+    services:
       postgres:
         image: postgres:alpine
         env:
           POSTGRES_PASSWORD: 1234
-          POSTGRES_USER : root
-          POSTGRES_DB : simple_bank
+          POSTGRES_USER: root
+          POSTGRES_DB: simple_bank
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
