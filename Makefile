@@ -19,6 +19,4 @@ sqlc:
 test:
 	go test -v -cover ./...
 
-
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test migrateup_CI
- 
+.PHONY: postgres createdb dropdb migrateup migrateup_CI migratedown sqlc test
