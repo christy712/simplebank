@@ -1,8 +1,11 @@
 module github.com/christy712/simplebank
 
-go 1.21.5
+go 1.21
 
-require github.com/lib/pq v1.10.9
+require (
+	github.com/lib/pq v1.10.9
+	github.com/stretchr/testify v1.8.4
+)
 
 require (
 	github.com/bytedance/sonic v1.10.2 // indirect
